@@ -28,7 +28,7 @@ After successfull sign up/in, we can start using the application. The main page 
 ![image](https://user-images.githubusercontent.com/68230346/176457064-871680a6-ed22-412b-8235-b15821d74b47.png)
 
 Tapping quick start will generate a random training from the built in trainings that the application provides, and start the active training activity.
-But before that, we can also customize our trainings under 'Customize' bar:
+But before that, we can also customize our trainings under 'Customize':
 
 ![image](https://user-images.githubusercontent.com/68230346/176458174-c1390732-e011-43c6-8f45-c3ea8aa629e5.png)
 
