@@ -1,7 +1,7 @@
 # GuidedTrainingApplication
 An android application that provides the ability to have a guided training anywhere anytime. The application handles different users and each user can customize his own trainings or use the built in trainings. Every training record can be saved and shown in the history page. The main purpose is having a training without expensive gym equipment and at any location that the user desires.
 
-The first page displayed offers to login or register with many option such as mannually, google, phone:
+The first page display suggestions to login or register with many option such as mannually, google, phone:
 
 ![image](https://user-images.githubusercontent.com/68230346/176455569-27e82ef1-45d2-40a3-b5c9-2aaba761b571.png)
 
