@@ -72,7 +72,6 @@ public class DatabaseHelper {
                 // whenever data at this location is updated.
                 Training training = dataSnapshot.getValue(Training.class);
                 mode.setText(training.getMode());
-                muscles.setText("Muscles: None.");
                 int i = 0;
                 for(String m : training.getMusclesMap().values()) {
                     if(i++ > 0)
