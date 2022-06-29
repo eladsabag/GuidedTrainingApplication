@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true"
+    android:id="@+id/main_LAY_rel"
+    tools:context=".activities.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main_LOT_anim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/loading_gray"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/main_LAY_lin">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="GTA"
+            android:textColor="#E1D9D9"
+            android:textSize="50sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guided.Training.Application."
+            android:textSize="15sp"
+            android:textColor="#C6C6C6"
+            android:fontFamily="serif-monospace"
+            android:textFontWeight="600"
+            android:layout_marginBottom="275dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif-monospace"
+            app:cornerRadius="20dp"
+            android:padding="15dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textFontWeight="900"
+            app:icon="@drawable/ic_enter"
+            app:iconSize="20dp"
+            app:iconTint="@color/black"
+            app:iconGravity="end"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_join"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#C8000000"
+            android:fontFamily="serif-monospace"
+            app:cornerRadius="20dp"
+            android:padding="15dp"
+            android:text="Join Now"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textFontWeight="900"
+            app:icon="@drawable/ic_join"
+            app:iconSize="20dp"
+            app:iconGravity="end"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_google"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#004C4A4A"
+                app:icon="@drawable/ic_google"
+                android:layout_margin="5dp"
+                app:iconSize="30dp"
+                app:iconGravity="textEnd"
+                app:iconTint="@null"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_phone"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#004C4A4A"
+                app:icon="@drawable/ic_call"
+                android:layout_margin="5dp"
+                app:iconSize="30dp"
+                app:iconGravity="textEnd"
+                app:iconTint="@null"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_email"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#004C4A4A"
+                app:icon="@drawable/ic_letter"
+                android:layout_margin="5dp"
+                app:iconSize="30dp"
+                app:iconGravity="textEnd"
+                app:iconTint="@null"/>
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'Overcome the Impossible''"
+            android:layout_marginTop="5dp"
+            android:textSize="28sp"
+            android:textColor="#C6C6C6"
+            android:fontFamily="cursive"
+            android:textFontWeight="600" />
+
+    </LinearLayout>
+
+</RelativeLayout>

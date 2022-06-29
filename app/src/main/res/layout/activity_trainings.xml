@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_jumper2"
+    tools:context=".activities.TrainingsActivity">
+
+    <com.example.guidedtrainingapplication.views.TrainingView
+        android:id="@+id/trainingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="cursive"
+            android:text="My Trainings"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#594B4B"
+            android:textFontWeight="600"
+            android:textSize="22sp" />
+    </com.example.guidedtrainingapplication.views.TrainingView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/trainings_NAV_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="7dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

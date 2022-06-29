@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "681053323031",
+    "project_id": "guidedtrainingapplicatio-d0822",
+    "storage_bucket": "guidedtrainingapplicatio-d0822.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681053323031:android:c93930893c3e037a3a4152",
+        "android_client_info": {
+          "package_name": "com.example.guidedtrainingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681053323031-3t4sso31k8lse2i7mu8vpbvc6tioqkr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyHCae8_YJlPdXn8hUo840B6SiL3YmlTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681053323031-3t4sso31k8lse2i7mu8vpbvc6tioqkr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

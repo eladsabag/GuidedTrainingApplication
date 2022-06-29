@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/customize"
+        android:title="Customize"
+        android:icon="@drawable/ic_customize"/>
+    <item
+        android:id="@+id/history"
+        android:title="History"
+        android:icon="@drawable/ic_diagram" />
+
+    <item
+        android:id="@+id/quickstart"
+        android:title="Quick Start"
+        android:icon="@drawable/ic_playbutton"/>
+    <item
+        android:id="@+id/trainings"
+        android:title="Trainings"
+        android:icon="@drawable/ic_dumbell"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+</menu>

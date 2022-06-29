@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_think"
+    tools:context=".activities.CustomizeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="13dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Customize Your Training"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:padding="35dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:fontFamily="casual"
+                android:textFontWeight="600"
+                android:text="Select Mode &amp; Muscles:"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <Spinner
+                android:id="@+id/customize_SPN_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox android:id="@+id/customize_BOX_chest"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Chest"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/customize_BOX_legs"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Legs"
+
+                android:onClick="onCheckboxClicked"/>
+
+            <CheckBox android:id="@+id/customize_BOX_back"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/customize_BOX_shoulders"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Shoulders"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/customize_BOX_biceps"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Biceps"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/customize_BOX_triceps"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Triceps"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/customize_BOX_abs"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Abs"
+                android:onClick="onCheckboxClicked"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:fontFamily="casual"
+                    android:textFontWeight="600"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_rounded_stroke"
+                    android:layout_gravity="end">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/customize_BTN_setsminus"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="0dp"
+                        app:iconGravity="textStart"
+                        app:icon="@drawable/ic_minus"
+                        app:iconTint="@color/white"
+                        app:iconSize="16dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/customize_LBL_setsamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/customize_BTN_setsplus"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="0dp"
+                        app:iconGravity="textStart"
+                        app:icon="@drawable/ic_plus"
+                        app:iconTint="@color/white"
+                        app:iconSize="16dp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Length:"
+                    android:fontFamily="casual"
+                    android:textFontWeight="600"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_rounded_stroke"
+                    android:layout_gravity="end">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/customize_BTN_lengthminus"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="0dp"
+                        app:iconGravity="textStart"
+                        app:icon="@drawable/ic_minus"
+                        app:iconTint="@color/white"
+                        app:iconSize="16dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/customize_LBL_lengthamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/customize_BTN_lengthplus"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="0dp"
+                        app:iconGravity="textStart"
+                        app:icon="@drawable/ic_plus"
+                        app:iconTint="@color/white"
+                        app:iconSize="16dp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/customize_BTN_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_edit"
+                app:iconGravity="start"
+                app:iconSize="16dp"
+                app:iconTint="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/customize_NAV_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="7dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

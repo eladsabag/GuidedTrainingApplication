@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_girl2"
+    tools:context=".activities.HistoryActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="My Achievements"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="30sp"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/history_LAY_records"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.756" />
+
+        <FrameLayout
+            android:id="@+id/history_LAY_records"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="24dp"
+            android:layout_weight="1"
+            android:background="#45454545"
+            android:padding="10dp" />
+
+        <FrameLayout
+            android:id="@+id/history_LAY_map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="0.5"
+            android:background="#45454545"
+            android:padding="10dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/history_NAV_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="7dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

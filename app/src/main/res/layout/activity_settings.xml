@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_gym"
+    tools:context=".activities.SettingsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_IMG_initials"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_NAV_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/settings_LBL_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_NAV_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_IMG_initials"
+        app:layout_constraintVertical_bias="0.068" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_BTN_vibrate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="VIBRATE ON"
+        android:backgroundTint="#2E2D2D"
+        android:fontFamily="casual"
+        app:icon="@drawable/ic_vibrationon"
+        app:iconSize="20dp"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/settings_NAV_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_LBL_email"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_BTN_audio"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="AUDIO ON"
+        android:backgroundTint="#888787"
+        android:fontFamily="casual"
+        app:icon="@drawable/ic_audioon"
+        app:iconSize="20dp"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/settings_NAV_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_BTN_vibrate"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_BTN_logout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:fontFamily="casual"
+        app:icon="@drawable/ic_logout"
+        app:iconSize="20dp"
+        app:iconGravity="end"
+        android:backgroundTint="#E4E4E4"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/settings_NAV_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_BTN_audio"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/settings_NAV_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="7dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

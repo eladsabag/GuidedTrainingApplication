@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/ic_girl"
+    tools:context=".activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="serif-monospace"
+            android:text="Register"
+            android:textColor="#E1D9D9"
+            android:textSize="50sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_LAY_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6DFFFFFF"
+                android:drawableEnd="@drawable/ic_open_mail"
+                android:ems="10"
+                android:hint="New Account Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#ACACAC"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_LAY_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6DFFFFFF"
+                android:drawableEnd="@drawable/ic_lock"
+                android:hint="New Account Password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="#ACACAC"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_BTN_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:icon="@drawable/ic_signup"
+            app:iconGravity="start"
+            app:iconSize="16dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/register_LBL_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_error"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>
