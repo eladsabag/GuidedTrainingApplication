@@ -91,14 +91,14 @@ public class SettingsActivity extends AppCompatActivity {
             isVibrate = !isVibrate;
             settings_BTN_vibrate.setText(isVibrate ? "VIBRATE ON" : "VIBRATE OFF");
             settings_BTN_vibrate.setIcon(isVibrate ? getDrawable(R.drawable.ic_vibrationon) : getDrawable(R.drawable.ic_vibrationoff));
-            MSP.getMe(this).putBooleanToSP("isVibrate", isVibrate); // save isVibrate value to shared preferences
+            MSP.getMe(this).putBooleanToSP(mAuth.getUid() + "_isVibrate", isVibrate); // save isVibrate value to shared preferences
             vibrateOnce();
         });
         settings_BTN_audio.setOnClickListener(e -> {
             isAudio = !isAudio;
             settings_BTN_audio.setText(isAudio ? "AUDIO ON" : "AUDIO OFF");
             settings_BTN_audio.setIcon(isAudio ? getDrawable(R.drawable.ic_audioon) : getDrawable(R.drawable.ic_audiooff));
-            MSP.getMe(this).putBooleanToSP("isAudio", isAudio); // save isAudio value to shared preferences
+            MSP.getMe(this).putBooleanToSP(mAuth.getUid() + "_isAudio", isAudio); // save isAudio value to shared preferences
         });
         settings_BTN_logout.setOnClickListener(e -> logoutDialog());
         initNavigation();
@@ -223,8 +223,8 @@ public class SettingsActivity extends AppCompatActivity {
      * This function real the vibration and audio values from shared preferences.
      */
     private void readFromSharedPreferences() {
-        isVibrate = MSP.getMe(this).getBooleanFromSP("isVibrate",true);
-        isAudio = MSP.getMe(this).getBooleanFromSP("isAudio",true);
+        isVibrate = MSP.getMe(this).getBooleanFromSP(mAuth.getUid() + "_isVibrate",true);
+        isAudio = MSP.getMe(this).getBooleanFromSP(mAuth.getUid() + "_isAudio",true);
     }
 
     /**

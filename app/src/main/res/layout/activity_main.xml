@@ -83,38 +83,29 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <ImageView
                 android:id="@+id/main_BTN_google"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:backgroundTint="#004C4A4A"
-                app:icon="@drawable/ic_google"
-                android:layout_margin="5dp"
-                app:iconSize="30dp"
-                app:iconGravity="textEnd"
-                app:iconTint="@null"/>
+                android:src="@drawable/ic_google"
+                android:layout_margin="5dp"/>
 
-            <com.google.android.material.button.MaterialButton
+            <ImageView
                 android:id="@+id/main_BTN_phone"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:backgroundTint="#004C4A4A"
-                app:icon="@drawable/ic_call"
-                android:layout_margin="5dp"
-                app:iconSize="30dp"
-                app:iconGravity="textEnd"
-                app:iconTint="@null"/>
+                android:src="@drawable/ic_call"
+                android:layout_margin="5dp"/>
 
-            <com.google.android.material.button.MaterialButton
+            <ImageView
                 android:id="@+id/main_BTN_email"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:backgroundTint="#004C4A4A"
-                app:icon="@drawable/ic_letter"
-                android:layout_margin="5dp"
-                app:iconSize="30dp"
-                app:iconGravity="textEnd"
-                app:iconTint="@null"/>
+                android:src="@drawable/ic_letter"
+                android:layout_margin="5dp"/>
         </LinearLayout>
 
         <com.google.android.material.textview.MaterialTextView

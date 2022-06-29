@@ -24,6 +24,8 @@ import com.example.guidedtrainingapplication.fragments.Fragment_Manage;
 import com.example.guidedtrainingapplication.fragments.Fragment_Video;
 import com.example.guidedtrainingapplication.utils.MSP;
 import com.google.android.material.textview.MaterialTextView;
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Timer;
@@ -42,6 +44,9 @@ public class ActiveTrainingActivity extends AppCompatActivity {
     private Fragment_Details fragment_details;
     private Fragment_Video fragment_video;
     private Fragment_Manage fragment_manage;
+
+    // Firebase
+    private FirebaseAuth mAuth;
 
     // Callbacks
     private CallBack_SkipClicked callBack_SkipClicked = new CallBack_SkipClicked() {
@@ -101,6 +106,9 @@ public class ActiveTrainingActivity extends AppCompatActivity {
         // showing the back button in action bar
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
         readFromSharedPreferences();
 
         if(isAudio) {
@@ -141,8 +149,8 @@ public class ActiveTrainingActivity extends AppCompatActivity {
      * This function read the vibration and audio value from shared preferences.
      */
     private void readFromSharedPreferences() {
-        isVibrate = MSP.getMe(this).getBooleanFromSP("isVibrate",true);
-        isAudio = MSP.getMe(this).getBooleanFromSP("isAudio",true);
+        isVibrate = MSP.getMe(this).getBooleanFromSP(mAuth.getUid() + "_isVibrate",true);
+        isAudio = MSP.getMe(this).getBooleanFromSP(mAuth.getUid() + "_isAudio",true);
     }
 
     /**

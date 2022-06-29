@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -24,7 +25,8 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     // Main Views
-    private MaterialButton main_BTN_join, main_BTN_login, main_BTN_google, main_BTN_phone, main_BTN_email;
+    private MaterialButton main_BTN_join, main_BTN_login;
+    private ImageView main_BTN_google, main_BTN_phone, main_BTN_email;
     private RelativeLayout main_LAY_rel;
     private LinearLayout main_LAY_lin;
     private LottieAnimationView main_LOT_anim;
