@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GTA</string>
     <string name="underlined_skip"><u>Skip</u></string>
+    <string name="myApiKey">BuildConfig.API_KEY</string>
 </resources>
